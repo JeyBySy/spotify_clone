@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-secondary {
+  background: #121212;
+}
+
+input.search {
+  outline: none;
+}
+.hightlight {
+  background-color: #2a2a2a;
+}
+@layer components {
+  .category {
+    @apply text-sm hightlight px-3 py-1 rounded-full cursor-pointer;
+  }
+  .list {
+    @apply w-[20px] w-[98%] py-2 px-2;
+  }
+}
