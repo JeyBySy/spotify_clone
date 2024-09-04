@@ -1,12 +1,11 @@
-import { assets } from '../assets/assets.js'
-const SideNavbar = () => {
+import { assets } from '../../assets/assets.js'
+const Library = () => {
     return (
-        <div className="bg-secondary m-2 rounded py-4 px-6 w-[25%] h-full">
+        <>
             <div className="flex mb-7">
                 <div className='flex flex-1 gap-3'>
                     <img src={assets.stack_icon} alt="stack" className='w-6' />
                     <div className='text-gray-400 font-semibold'>
-
                         Your Library
                     </div>
                 </div>
@@ -21,12 +20,12 @@ const SideNavbar = () => {
                 <div className="category">Artist</div>
                 <div className="category">Album</div>
             </div>
-            <div className='h-[80%] overflow-y-auto scroll-smooth'>
+            <div className='h-[90%] overflow-y-auto scroll-smooth'>
                 <div className='flex items-center justify-between pb-3 '>
                     <img src={assets.search_icon} alt="Home" className='w-4' />
-                    <div className='flex place-content-center text-sm'>
+                    <div className='flex place-content-center items-center text-sm'>
                         Recents
-                        <img src={assets.list_icon} alt="Home" className='w-5' />
+                        <img src={assets.list_icon} alt="Home" className='w-6' />
                     </div>
                 </div>
                 <div className='flex flex-col items-start gap-2'>
@@ -108,10 +107,9 @@ const SideNavbar = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
-        </div>
+        </>
     )
 }
 
-export default SideNavbar
+export default Library

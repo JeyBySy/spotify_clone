@@ -14,7 +14,7 @@ const Navbar = () => {
                         <img src={assets.search_icon} alt="Home" className='w-7' />
                     </div>
                     <input className="bg-secondary search w-[100%]" type="text" placeholder='What do you want to play?' />
-                    <div className="place-content-center flex gap-2 border-l-2 m-2 pl-3 border-s border-gray-500">
+                    <div className="place-content-center flex gap-2 border-l-2 m-3 pl-3 border-s border-gray-500">
                         <img src={assets.browse_logo} alt="browse" className='w-7 h-7 m-auto place-self-end' />
                     </div>
                 </div>
