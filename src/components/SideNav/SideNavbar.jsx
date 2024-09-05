@@ -4,7 +4,7 @@ import Library from "./Library"
 // eslint-disable-next-line react/prop-types
 const SideNavbar = ({ section }) => {
     return (
-        <div className="bg-secondary m-2 rounded-xl py-4 px-6 w-[100%] h-full">
+        <div className="w-full px-2 lg:w-[25%] ">
             {(() => {
                 switch (section) {
                     case 'library':

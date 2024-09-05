@@ -1,6 +1,6 @@
-const Main = () => {
+const Display = () => {
     return (
-        <div className="bg-secondary mt-2 rounded-xl py-4 px-6 w-[100%] h-full">
+        <div className="bg-secondary rounded-md py-4 px-6 w-full">
             <div className='flex flex-wrap gap-3 pb-3'>
                 <div className="category">All</div>
                 <div className="category">Music</div>
@@ -11,4 +11,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default Display
