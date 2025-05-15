@@ -46,6 +46,7 @@ import img16 from './img16.jpg'
 import song1 from './song1.mp3'
 import song2 from './song2.mp3'
 import song3 from './song3.mp3'
+import artistahin from './artistahin.jpg'
 
 export const assets = {
     bell_icon,
@@ -76,7 +77,11 @@ export const assets = {
     spotify_logo,
     spotify_logo_inverse,
     clock_icon,
-    img1_icon
+    img1_icon,
+    artistahin,
+    img13,
+    img6,
+    img3
 }
 
 export const albumsData = [
