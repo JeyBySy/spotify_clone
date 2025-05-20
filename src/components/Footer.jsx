@@ -1,8 +1,9 @@
 import { Facebook, Twitter, Instagram } from "lucide-react"
 const Footer = () => {
     return (
-        <footer className="px-10 py-1 pb-16 ">
+        <footer className="px-8 py-1 pb-16 ">
             <main className="flex flex-col gap-10 pt-10">
+                <hr className="border-none h-[1px] bg-neutral-800" />
                 <div className="flex flex-row gap-5 justify-between text-base font-medium">
                     <div className="flex flex-col gap-2 ">
                         <p>Company</p>

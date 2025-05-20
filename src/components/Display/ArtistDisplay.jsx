@@ -20,7 +20,7 @@ const TestSongList = ({ index }) => {
             </div>
             <div className='flex flex-row gap-2 justify-start items-center'>
                 <div>
-                    <div className='w-10 h-10 rounded border'></div>
+                    <div className='w-10 h-10 rounded bg-green-900'></div>
                 </div>
                 <div>title song here</div>
             </div>
@@ -52,7 +52,7 @@ const ArtistDisplay = ({ artistID }) => {
         <div
             ref={scrollRef}
             onScroll={(e) => setScrollPos(e.target.scrollTop)}
-            className="rounded-md bg-secondary overflow-y-auto custom-scrollbar relative">
+            className="rounded-md bg-custom-main overflow-y-auto custom-scrollbar relative">
             {showStickyHeader && (
                 <div className={`shadow-2xl sticky top-0 w-full flex items-center justify-center z-50 bg-green-900 px-4 py-2 text-white font-bold text-lg transition-all duration-1000 ${showStickyHeader ? 'opacity-100' : 'opacity-100 pointer-events-none'}`}>
                     <div className='container flex items-center justify-start gap-3'>
@@ -63,21 +63,21 @@ const ArtistDisplay = ({ artistID }) => {
                     </div>
                 </div>
             )}
-            <div data-id={artistID} className="flex flex-col container mx-auto">
-                <div className="z-0 sticky top-0 bg-green-700 w-full h-[42dvh] bg-gradient-to-t from-neutral-900/0 to-neutral-900/60">
+            <main data-id={artistID} className="flex flex-col">
+                <div className="z-0 sticky top-0 bg-green-700 w-full h-[42dvh] bg-gradient-to-b from-neutral-900/0 to-neutral-900/40">
                     <div className='flex items-center justify-center h-full'>
                         <p>Image Here</p>
                     </div>
                 </div>
 
                 <div className='z-40 -mt-64 overflow-y-auto'>
-                    <div className='bg-transparent flex flex-col gap-4 bottom-0 left-0 px-6 py-8 text-white text-2xl font-bold p-4'>
+                    <div className='container mx-auto bg-transparent flex flex-col gap-4 bottom-0 left-0 px-6 py-8 text-white text-2xl font-bold p-4'>
                         <p className='text-sm font-medium flex items-center gap-2'><BadgeCheck className='stroke-white fill-blue-500' />Verified Artist</p>
                         <p className='text-8xl font-black'>JeyBySy</p>
                         <span className='text-sm font-medium'>560,983 monthly listeners</span>
                     </div>
-                    <div className="flex flex-col gap-2  place-items-center bg-secondary">
-                        <section className='px-6 py-7 w-full'>
+                    <div className="flex flex-col gap-2  place-items-center  bg-gradient-to-t from-custom-main from-[88%] to-green-950">
+                        <section className='px-6 py-7 w-full container mx-auto'>
                             <div className='flex flex-row items-center justify-start gap-6'>
                                 <div className='p-4 rounded-full bg-green-500'>
                                     <Play className='w-6 h-6 fill-black stroke-black' />
@@ -93,7 +93,7 @@ const ArtistDisplay = ({ artistID }) => {
                                 </div>
                             </div>
                         </section>
-                        <section className='w-full px-6'>
+                        <section className='w-full px-6 container mx-auto'>
                             <div className='flex flex-col'>
                                 <p className='text-2xl font-semibold'>Popular</p>
                             </div>
@@ -104,7 +104,7 @@ const ArtistDisplay = ({ artistID }) => {
                                 <span className='cursor-pointer px-6 text-sm font-semibold text-neutral-300'>Show less</span>
                             </div>
                         </section>
-                        <section className='w-full'>
+                        <section className='w-full container mx-auto'>
                             <div className='flex flex-col'>
                                 <p className='text-2xl font-semibold'></p>
                             </div>
@@ -116,7 +116,7 @@ const ArtistDisplay = ({ artistID }) => {
                                 </Carousel>
                             </div>
                         </section>
-                        <section className='w-full'>
+                        <section className='w-full container mx-auto'>
                             <div className='flex flex-col'>
                                 <p className='text-2xl font-semibold'></p>
                             </div>
@@ -131,7 +131,7 @@ const ArtistDisplay = ({ artistID }) => {
                     </div>
 
                 </div>
-            </div>
+            </main>
             <Footer />
         </div>
 

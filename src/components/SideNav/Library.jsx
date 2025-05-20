@@ -5,7 +5,7 @@ const Library = () => {
     const navigate = useNavigate();
     return (
         <div className="h-full">
-            <div className='bg-secondary h-full rounded-md py-5 '>
+            <div className='bg-custom-main h-full rounded-md py-5 '>
                 <div className="flex mb-6 px-6">
                     <div className='flex flex-1 gap-3 items-center justify-start'>
                         <img src={assets.stack_icon} alt="stack" className='w-4 h-4' />

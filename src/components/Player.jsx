@@ -4,7 +4,7 @@ const Player = () => {
     return (
         <div className='h-[90px] justify-between flex items-center px-4 py-1 z-10 bg-black '>
             <div className="items-center lg:flex gap-4 w-full">
-                <img src={assets.img3} alt="icon" className="h-full w-12 rounded object-contain" />
+                <img src={assets.artistahin} alt="icon" className="h-full w-12 rounded object-contain" />
                 <div className="grid text-xs">
                     <p className="font-medium">Title</p>
                     <p className="font-light">Artist</p>

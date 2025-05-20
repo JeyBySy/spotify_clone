@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-secondary {
+/* .bg-custom-main {
   background: #121212;
-}
+} */
 
 input.search {
   outline: none;

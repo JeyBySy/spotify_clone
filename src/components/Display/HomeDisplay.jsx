@@ -5,10 +5,10 @@ import RecommendCard from "../RecommendCard"
 
 const HomeDisplay = () => {
     return (
-        <div className="rounded-md bg-secondary overflow-y-auto custom-scrollbar relative">
-            <div className="flex flex-col container mx-auto">
+        <div className="rounded-md bg-custom-main overflow-y-auto custom-scrollbar relative">
+            <main className="flex flex-col container mx-auto">
                 {/* Category */}
-                <section className="px-12 flex flex-row gap-2 py-4 text-xs place-items-center">
+                <section className="sticky top-0  bg-custom-main z-50 px-12 flex flex-row gap-2 py-4 text-xs place-items-center">
                     <div className="px-4 py-2 rounded-3xl bg-white text-black">
                         All
                     </div>
@@ -22,7 +22,7 @@ const HomeDisplay = () => {
                 <section className="px-12 w-full pt-1 pb-5 grid grid-cols-4 gap-2 place-items-center">
                     {Array(8).fill(null).map((_, index) => (
                         <div key={index} className="shadow bg-neutral-800/90 flex w-full text-sm font-bold rounded-sm">
-                            <div className="h-12 w-12 border text-center"></div>
+                            <div className="h-12 w-12 bg-green-900 text-center rounded-l-sm"></div>
                             <div className="px-2 flex justify-center items-center">
                                 Text Here
                             </div>
@@ -105,7 +105,7 @@ const HomeDisplay = () => {
                         </RecommendCard>
                     </div>
                 </section>
-            </div>
+            </main>
             <Footer />
         </div>
     )
