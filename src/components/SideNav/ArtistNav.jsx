@@ -1,7 +1,7 @@
 
 import { Ellipsis, Maximize2, PanelRightClose } from "lucide-react"
 
-const Artist = () => {
+const ArtistNav = () => {
     return (
         <div className=" h-full custom-scrollbar relative">
             <div className="sticky top-0 z-40 bg-custom-main py-5 px-4 shadow-2xl flex flec-row  justify-between">
@@ -14,10 +14,10 @@ const Artist = () => {
                     <Maximize2 className='w-4 h-4 stroke-neutral-500 hover:stroke-neutral-300' />
                 </div>
             </div>
-            <div className="z-0 bg-gradient-to-b from-green-900 from-80% to-bg-scrondary h-[820px] relative flex items-center justify-center">
+            <div className="z-0 bg-gradient-to-b from-green-900 from-80% to-custom-main h-[820px] relative flex items-center justify-center">
                 Image
             </div>
-            <main className="relative py-4">
+            <main className="relative py-4 bg-custom-main">
                 <section className="-mt-[350px] px-4 space-y-5">
                     <div className="w-full flex flex-col gap-3 ">
                         <p className="text-2xl font-semibold">
@@ -83,4 +83,4 @@ const Artist = () => {
     )
 }
 
-export default Artist
+export default ArtistNav

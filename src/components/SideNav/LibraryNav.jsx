@@ -1,7 +1,7 @@
 import { assets } from '../../assets/assets.js'
 import { useNavigate } from "react-router-dom";
 import { Search } from "lucide-react"
-const Library = () => {
+const LibraryNav = () => {
     const navigate = useNavigate();
     return (
         <div className="h-full">
@@ -81,4 +81,4 @@ const Library = () => {
     )
 }
 
-export default Library
+export default LibraryNav
