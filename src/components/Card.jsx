@@ -8,7 +8,7 @@ const Card = () => {
         <div
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className="flex flex-col gap-3 w-full rounded-md border-transparent hover:bg-neutral-800/60 p-3 relative"
+            className="flex flex-col gap-3  rounded-md border-transparent hover:bg-neutral-800/60 p-3 relative"
         >
             <div className="rounded-md w-[10.7rem] h-[10.7rem] bg-blue-900 justify-center items-center flex">
                 Image

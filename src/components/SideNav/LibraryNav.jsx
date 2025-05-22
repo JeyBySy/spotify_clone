@@ -68,8 +68,8 @@ const LibraryNav = () => {
                                     <img src={assets.artistahin} alt="icon" className="w-12 h-12 rounded object-contain" />
                                 </div>
                                 <div title="Jheric Cocosa" className='flex flex-col items-start justify-center pl-2 w-[100px] flex-grow'>
-                                    <p className="text-ellipsis overflow-hidden whitespace-nowrap w-full text-start font-medium">JeyBySy</p>
-                                    <p className="text-sm text-gray-500">Album </p>
+                                    <p className="text-ellipsis overflow-hidden whitespace-nowrap w-full text-start font-medium">Album Title</p>
+                                    <p className="text-sm text-gray-500">Album · JeyBySy </p>
                                 </div>
                             </button>
                         ))}

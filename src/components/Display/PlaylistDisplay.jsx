@@ -1,4 +1,4 @@
-import { ArrowDown, BadgeCheck, Check, CirclePlus, Clock3, Ellipsis, List, Play } from "lucide-react"
+import { ArrowDown, Check, CirclePlus, Clock3, Ellipsis, List, Play } from "lucide-react"
 import Footer from "../Footer"
 import { useEffect, useRef, useState } from "react"
 import Carousel from "../Carousel"
@@ -96,10 +96,14 @@ const PlaylistDisplay = () => {
                             <div className="rounded shadow-2xl w-[14.5rem] h-[14.5rem] bg-green-950 justify-center items-center flex">
                                 Image
                             </div>
-                            <div className=' flex flex-col gap-4  text-white text-2xl font-bold p-4'>
-                                <p className='text-sm font-medium flex items-center gap-2'><BadgeCheck className='stroke-white fill-blue-500' />Verified Artist</p>
+                            <div className='flex flex-col gap-4  text-white text-2xl font-bold px-6 justify-end h-full'>
+                                <p className='text-sm font-medium flex items-center'>Public Playlist</p>
                                 <p className='text-8xl font-black'>JeyBySy</p>
-                                <span className='text-sm font-medium'>560,983 monthly listeners</span>
+                                <span className="text-xs text-neutral-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, veritatis!</span>
+                                <div className="flex items-center gap-1">
+                                    <div className="w-6 h-6 bg-blue-900 rounded-full" />
+                                    <span className='text-sm font-medium'>Spotify • 2,066,782 saves • 10 songs, about 3 hr 15 min</span>
+                                </div>
                             </div>
                         </div>
                     </div>
