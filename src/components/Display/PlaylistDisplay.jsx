@@ -80,7 +80,7 @@ const PlaylistDisplay = () => {
             onScroll={(e) => setScrollPos(e.target.scrollTop)}
             className="rounded-md bg-custom-main overflow-y-auto custom-scrollbar relative ">
             {showStickyHeader && (
-                <div className={`shadow-2xl h-[65px] sticky top-0 w-full flex items-center justify-center z-50 bg-green-900 px-4 py-2 text-white font-bold text-lg transition-all duration-1000 ${showStickyHeader ? 'opacity-100' : 'opacity-100 pointer-events-none'}`}>
+                <div className={`shadow-2xl h-[65px] sticky top-0 w-full flex items-center justify-center z-30 bg-green-900 px-4 py-2 text-white font-bold text-lg transition-all duration-1000 ${showStickyHeader ? 'opacity-100' : 'opacity-100 pointer-events-none'}`}>
                     <div className='container flex items-center justify-start gap-3'>
                         <div className='p-3 rounded-full bg-green-500'>
                             <Play className='w-6 h-6 fill-black stroke-black' />
