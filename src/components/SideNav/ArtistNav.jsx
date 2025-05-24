@@ -11,7 +11,7 @@ const ArtistNav = () => {
         setShowArtistDetails((prev) => !prev)
     }
     return (
-        <div className=" h-full custom-scrollbar relative">
+        <div className=" h-full custom-scrollbar relative overflow-y-auto custom-main rounded-md">
             {showArtistDetails && (
                 <PopOver isOpen={showArtistDetails} onClose={handleShowArtistDetails}>
                     <AboutArtist handleClick={handleShowArtistDetails} />

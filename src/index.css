@@ -8,6 +8,7 @@
 
 input.search {
   outline: none;
+  background: none;
 }
 .hightlight {
   background-color: #2a2a2a;
@@ -45,4 +46,8 @@ input.search {
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.library_btn {
+  @apply flex w-full items-center p-2 hover:bg-neutral-800 rounded-md;
 }

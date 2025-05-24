@@ -1,44 +1,47 @@
+import { House, PanelTop, Search, User } from 'lucide-react';
 import { assets } from '../assets/assets.js'
 import { useNavigate } from "react-router-dom";
 const Navbar = () => {
     const navigate = useNavigate();
     return (
-        <div className='w-full max-h-13 flex my-1 py-1 gap-2'>
-            <div
-                onClick={() => navigate('/')}
-                className="flex ml-4 mt-1 w-full">
+        <div className='w-full h-[55px] grid grid-cols-[10%_400px_auto] md:grid-cols-[auto_1fr_auto] my-1 gap-2 relative'>
+            <div className="flex items-center ml-4 w-full"
+                onClick={() => navigate('/')}>
                 <img src={assets.spotify_logo_inverse} alt="Logo" className='w-10 h-10 cursor-pointer' />
             </div>
-            <div className="flex gap-2 px-20 w-full">
-                <div className="bg-custom-main place-content-center rounded-full w-14">
-                    <img src={assets.home_icon} alt="Home" className='w-6 m-auto cursor-pointer' />
+            <div className='flex gap-2 relative items-center w-full h-full py-2 lg:px-4 lg:justify-end lg:pr-[16rem] overflow-hidden '>
+                <div className="bg-neutral-800 place-content-center rounded-full p-3">
+                    <House className="w-6 h-6  stroke-neutral-300" />
                 </div>
-                <div className="bg-custom-main flex justify-items-center rounded-full px-3 gap-3 w-[100%]">
-                    <div className="bg-custom-main place-content-center rounded-full">
-                        <img src={assets.search_icon} alt="Home" className='w-7' />
+                <div className='bg-neutral-800 flex items-center rounded-full p-3 gap-3 w-full 2xl:w-[470px]'>
+                    <div className="bg-neutral-800 place-content-center rounded-full">
+                        <Search className="w-6 h-6  stroke-neutral-400" />
                     </div>
-                    <input className="bg-custom-main search w-[100%]" type="text" placeholder='What do you want to play?' />
-                    <div className="place-content-center flex gap-2 border-l-2 m-3 pl-3 border-s border-gray-500">
-                        <img src={assets.browse_logo} alt="browse" className='w-6 h-6 m-auto place-self-end cursor-pointer object-contain' />
+                    <input className="search w-[100%]" type="text" placeholder='What do you want to play?' />
+                    <div className=" border-l-[1px] border-neutral-500 pl-3">
+                        <PanelTop className="w-6 h-6  stroke-neutral-400" />
                     </div>
                 </div>
             </div>
-            <div className="flex flex-row justify-end w-full gap-3 pr-1">
-                <div className='flex place-content-center gap-2  items-center '>
+            <div className="flex flex-row justify-end items-center w-full gap-2 ">
+                <div className='gap-1  items-center lg:block hidden '>
                     <button className='border px-4 py-1.5 rounded-full text-sm bg-white text-black font-semibold'>
                         Explore Premium
                     </button>
                 </div>
-                <button className='flex gap-2 items-center justify-center px-2.5 py-1 text-neutral-400'>
+                <button className='flex gap-2 items-center justify-center px-4 py-1 text-neutral-400'>
                     <img src={assets.download_logo} alt="Download" className='w-4 h-4 border-2 rounded-full ' />
                     <div className="flex items-center font-semibold text-sm ">
                         Install App
                     </div>
                 </button>
-                <div className='flex place-content-center gap-2 px-3'>
+                <div className='flex place-content-center gap-2 px-2'>
                     <img src={assets.bell_icon} alt="Home" className='w-4 m-auto cursor-pointer' />
                 </div>
-                <div className="bg-custom-main place-content-center rounded-full w-12 cursor-pointer">
+                <div className='flex place-content-center gap-2 px-2'>
+                    <User />
+                </div>
+                <div className="bg-custom-main place-content-center rounded-full w-12 h-12 border cursor-pointer">
                     <img src={assets.home_icon} alt="Home" className='w-5 m-auto ' />
                 </div>
             </div>

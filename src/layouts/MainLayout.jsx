@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Player from "../components/Player";
-import LibraryNav from "../components/SideNav/LibraryNav";
+import LibraryNav from "../components/SideNav/LibraryNav/LibraryNav";
 import ArtistNav from "../components/SideNav/ArtistNav";
 import GithubTag from "../components/GithubTag";
 
@@ -11,13 +11,9 @@ const MainLayout = () => {
             <GithubTag />
             <Navbar />
             <div className="grid grid-cols-[420px_auto_370px] overflow-hidden gap-2 ">
-                <div className="">
-                    <LibraryNav />
-                </div>
+                <LibraryNav />
                 <Outlet />
-                <div className="overflow-y-auto custom-main rounded-md">
-                    <ArtistNav />
-                </div>
+                <ArtistNav />
             </div>
             <Player />
         </div>

@@ -26,7 +26,7 @@ const TestSongList = ({ index }) => {
                 <div className="flex flex-col min-w-0">
                     <span
                         className="text-base w-full font-medium text-white truncate"
-                        title="title song here dddddddddddddddddddddddddddddddddddddddddddddddddd"
+                        title="title song here"
                     >
                         title song here
                     </span>
@@ -39,7 +39,7 @@ const TestSongList = ({ index }) => {
                 <div className="flex flex-col min-w-0">
                     <span
                         className="text-sm w-full font-medium  truncate"
-                        title="title song here dddddddddddddddddddddddddddddddddddddddddddddddddd"
+                        title="title song here"
                     >
                         title song heredwd qdwq dasd qwdasd qwdsads
                     </span>
@@ -80,7 +80,7 @@ const PlaylistDisplay = () => {
             onScroll={(e) => setScrollPos(e.target.scrollTop)}
             className="rounded-md bg-custom-main overflow-y-auto custom-scrollbar relative ">
             {showStickyHeader && (
-                <div className={`shadow-2xl h-[65px] sticky top-0 w-full flex items-center justify-center z-30 bg-green-900 px-4 py-2 text-white font-bold text-lg transition-all duration-1000 ${showStickyHeader ? 'opacity-100' : 'opacity-100 pointer-events-none'}`}>
+                <div className={`shadow-2xl h-[65px] sticky top-0 w-full flex items-center justify-center z-30 bg-blue-900 px-4 py-2 text-white font-bold text-lg transition-all duration-1000 ${showStickyHeader ? 'opacity-100' : 'opacity-100 pointer-events-none'}`}>
                     <div className='container flex items-center justify-start gap-3'>
                         <div className='p-3 rounded-full bg-green-500'>
                             <Play className='w-6 h-6 fill-black stroke-black' />
@@ -91,9 +91,9 @@ const PlaylistDisplay = () => {
             )}
             <main className="w-full">
                 <div className="">
-                    <div className="bg-green-700 w-full h-[290px] bg-gradient-to-b from-neutral-900/0 to-neutral-900/40">
+                    <div className="bg-blue-700 w-full h-[290px] bg-gradient-to-b from-neutral-900/0 to-neutral-900/40">
                         <div className='flex items-center h-full px-6 py-5 pt-8 container mx-auto'>
-                            <div className="rounded shadow-2xl w-[14.5rem] h-[14.5rem] bg-green-950 justify-center items-center flex">
+                            <div className="rounded shadow-2xl w-[14.5rem] h-[14.5rem] bg-blue-900 justify-center items-center flex">
                                 Image
                             </div>
                             <div className='flex flex-col gap-4  text-white text-2xl font-bold px-6 justify-end h-full'>
@@ -107,7 +107,7 @@ const PlaylistDisplay = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-2 place-items-center bg-gradient-to-t from-custom-main from-85% to-green-700/30 ">
+                    <div className="flex flex-col gap-2 place-items-center bg-gradient-to-t from-custom-main from-85% to-blue-700/30 ">
                         <section className='px-6 py-6 w-full container mx-auto flex justify-between items-center'>
                             <div className='flex flex-row items-center justify-start gap-7'>
                                 <div className='p-4 rounded-full bg-green-500'>
