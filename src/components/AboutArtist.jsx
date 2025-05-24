@@ -6,12 +6,12 @@ const AboutArtist = ({ handleClick }) => {
         <div className="bg-neutral-800 text-white relative rounded-md h-full mx-auto shadow-lg overflow-y-auto custom-scrollbar">
             <button
                 onClick={handleClick}
-                className="absolute top-3 right-3 p-2 rounded-full bg-neutral-900/60 hover:bg-neutral-900 transition-colors duration-200"
+                className="absolute top-3 right-3 z-20 p-2 rounded-full bg-neutral-900/60 hover:bg-neutral-900 transition-colors duration-200"
             >
                 <X className="w-5 h-5 stroke-neutral-400 hover:stroke-white transition-colors duration-200" />
             </button>
             <section className="grid grid-rows-[auto_1fr_auto]">
-                <div className="bg-blue-900 w-full h-[45vh] flex items-center justify-center">Image</div>
+                <div className="bg-blue-900 w-full h-[430px] flex items-center justify-center">Image</div>
                 <div className="py-6 px-10 flex flex-row gap-12">
                     <div className="flex flex-col justify-start gap-10">
                         <div className="space-y-3">

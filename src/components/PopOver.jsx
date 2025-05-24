@@ -14,7 +14,7 @@ const PopOver = ({ children, isOpen, onClose }) => {
                     initial={{ opacity: 0, y: 100 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="bg-neutral-800 text-white max-w-3xl h-[70%] w-full rounded-md shadow-lg"
+                    className="bg-neutral-800 text-white max-w-3xl h-[70%] max-h-[70rem] w-full rounded-md shadow-lg"
                 >
                     {children}
                 </motion.div>
